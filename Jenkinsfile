@@ -11,7 +11,7 @@ pipeline {
     }
     stage('run') {
       steps {
-        sh 'java *.class'
+        sh 'java HelloWorld.class'
       }
     }
   }
