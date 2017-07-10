@@ -6,12 +6,12 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'javac -d . *.java'
+        sh 'javac *.java'
         }
     }
     stage('run') {
       steps {
-        sh 'java HelloWorld'
+        sh 'java *.class'
       }
     }
   }
