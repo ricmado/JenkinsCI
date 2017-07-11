@@ -13,7 +13,7 @@ pipeline {
     stage('run') {
       steps {
         sh 'java HelloWorld'
-		echo 'Holas'
+		echo ${JOB_NAME}
       }
     }
   }
