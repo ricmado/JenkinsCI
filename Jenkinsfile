@@ -8,7 +8,6 @@ pipeline {
     stage('build') {
       steps {
         sh 'javac *.java'
-		build '/TestJava_NormalJob/'
         }
     }
     stage('run') {
